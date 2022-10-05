@@ -45,6 +45,9 @@ img {
     background-color: #EFEEEB;
     float:left;
    }
+ .white img { 
+    width: 75%;
+   }
         
 .black{
     border: 1px solid #000000;
@@ -53,6 +56,9 @@ img {
     background-color:#83A9B3;
     float:left;
     }
+.black img {
+    width: 75%;
+}
     
 .clear{
     clear:both; 
