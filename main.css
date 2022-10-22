@@ -104,7 +104,7 @@ a:hover { color: #333745; }
 /* Form Styling */
 input[type=text], input[type=email], select, textarea {
     width: 70%;
-    font-size: larger;
+    font-size: medium;
     padding: 12px; 
     border: 1px solid #ccc; 
     border-radius: 4px;
@@ -125,3 +125,4 @@ input[type=submit], input[type=reset] {
     font-size: 16px;}
 input[type=submit]:hover, input[type=reset]:hover {
     background-color: #F2E9DC;}
+
