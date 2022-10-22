@@ -87,7 +87,7 @@ a:hover { color: #333745; }
 .column { 
     float: left; 
     width: 27%; 
-    height: 300px; 
+    height: auto; 
     margin: 10px 8px; 
     text-align: center;
     background-color: #2A9D8F; 
