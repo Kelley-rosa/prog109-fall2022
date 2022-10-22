@@ -104,6 +104,7 @@ a:hover { color: #333745; }
 /* Form Styling */
 input[type=text], input[type=email], select, textarea {
     width: 70%;
+    font-size: medium;
     padding: 12px; 
     border: 1px solid #ccc; 
     border-radius: 4px;
@@ -114,8 +115,7 @@ input[type=text], input[type=email], select, textarea {
 input:focus, textarea:focus {
     background-color: #E7ECEF;
     background-image: none;
-    color: rgb(0, 0, 0);
-    font-size: medium;}
+    color: rgb(0, 0, 0);}
 input[type=submit], input[type=reset] {
     background: #E7ECEF;
     padding: 10px;
