@@ -114,7 +114,8 @@ input[type=text], input[type=email], select, textarea {
 input:focus, textarea:focus {
     background-color: #E7ECEF;
     background-image: none;
-    color: rgb(0, 0, 0);}
+    color: rgb(0, 0, 0);
+    font-size: medium;}
 input[type=submit], input[type=reset] {
     background: #E7ECEF;
     padding: 10px;
