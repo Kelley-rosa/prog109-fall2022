@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <!--Meta Information-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="Kelley Rosa">
+
+        <!--Link CSS Style Sheet-->
+        <link rel="Stylesheet" href="style.css" type="text/css">
+
+        <!--Title Of Webpage-->
+        <title>Artifact 03</title>
+
+    </head>
+    <body>
+        <h2>Rhombus Generator</h2>
+        <label>What is the size of Rhombus?</label><br>
+        <input type="text" id="rHeight" value="5" size="5">
+        <br>
+        
+        <label>Choose color for Even position</label><br>
+        <select id="colorEven">
+            <option value="#FF006E">Pink</option>
+            <option value="#FB5607">Orange</option>
+            <option value="#FFBE0B">Yellow</option> 
+        </select>
+        <br> 
+        
+        <label>Choose color for Odd position</label><br>
+        <select id="colorOdd">
+            <option value="#8338EC">Purple</option>
+            <option value="#3A86FF">Blue</option>
+            <option value="#00A676">Green</option> 
+        </select>
+        <br>
+        
+        <label>Choose symbol for Rhombus</label>
+        <select id="symbol">
+            <option value="^">^</option>
+            <option value="+">+</option>
+            <option value="#">#</option> 
+        </select>
+        <br>
+        
+        <button onclick="createRhombus(document.getElementById('rHeight').value,
+        document.getElementById('colorEven').value,
+        document.getElementById('colorOdd').value,
+        document.getElementById('symbol').value);">Display Rhombus</button>
+        
+        <div id="upLeft"></div>
+        <div id="upRight"></div>
+        <div class="clear"></div>
+        <div id="downLeft"></div> 
+        <div id="downRight"></div>
+
+        <!--Calling Javascript Code-->
+        <script src="javascript.js"></script>
+ 
+    </body>
+</html>
