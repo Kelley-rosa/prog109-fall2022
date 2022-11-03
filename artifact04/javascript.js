@@ -29,11 +29,10 @@ function firstName(){
         };
 
     //4) Send error message to HTML
-    firstName.addEventListener('blur', firstName, false);
-    
+    document.getElementById("fname").innerHTML = errorMessages;
     
 
     //5) return status of each field
     return (validFirstname);
 }
-document.getElementById("fname").innerHTML = errorMessages;
+firstName.addEventListener('blur', firstName, false);
