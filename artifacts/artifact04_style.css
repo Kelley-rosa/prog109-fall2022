@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0; 
     background: #E7ECEF;
-    background: url(../images/background_image.jpg);
+    background: url("../images/background_image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: #1b1b1e;
