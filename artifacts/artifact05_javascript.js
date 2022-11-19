@@ -1,9 +1,9 @@
 var myImages = [
-  "..images/img1.jpg", 
-  "..images/img2.jpg",
-  "..images/img3.jpg",
-  "..images/img4.jpg",
-  "..images/img5.jpg"];
+  "..images/art05-1.jpg", 
+  "..images/art05-2.jpg",
+  "..images/art05-3.jpg",
+  "..images/art05-4.jpg",
+  "..images/art05-5.jpg"];
 
 var captionImages = [
   "Morning Medow",
