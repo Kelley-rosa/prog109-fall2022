@@ -75,9 +75,8 @@ a:hover { color: #333745; }
 
 /* Content Body Styling */
 #content { 
-    float: left; 
-    width: 90%; 
-    margin: 10px 20px 40px 20px;}
+    float: center; 
+    margin: 10px 20px;}
 #content h2 { 
     font-weight: normal; 
     font-size: 22px; 
@@ -91,11 +90,11 @@ a:hover { color: #333745; }
     float: left; 
     width: 27%; 
     height: 500px; 
-    margin: 10px 8px; 
+    margin: 10px 2.3%;
     text-align: center;
     background-color: #2A9D8F; 
     color: #E7ECEF; 
-    padding: 20px;}
+    padding: 10px;}
 .column a { 
     color: #E7ECEF;}
 .column a:hover { 
