@@ -75,7 +75,6 @@ a:hover { color: #333745; }
 
 /* Content Body Styling */
 #content { 
-    float: center; 
     margin: 10px 20px;}
 #content h2 { 
     font-weight: normal; 
