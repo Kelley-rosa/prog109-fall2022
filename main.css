@@ -92,10 +92,10 @@ a:hover { color: #333745; }
     margin: 10px 2.3%;
     text-align: center;
     background-color: #2A9D8F; 
-    color: #E7ECEF; 
+    color: #ffffff; 
     padding: 10px;}
 .column a { 
-    color: #E7ECEF;}
+    color: #ffffff;}
 .column a:hover { 
     color: #333745;}
 .left { float: left;}
