@@ -74,7 +74,7 @@ a:hover { color: #333745; }
     #footer a:hover { border-bottom: 1px solid #ccc; }
 
 /* Content Body Styling */
-#content { 
+#content {
     margin: 10px 20px;}
 #content h2 { 
     font-weight: normal; 
@@ -127,3 +127,7 @@ input[type=submit], input[type=reset] {
 input[type=submit]:hover, input[type=reset]:hover {
     background-color: #F2E9DC;}
 
+iframe {
+    height: 100%;
+    width: auto;
+}
