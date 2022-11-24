@@ -131,3 +131,10 @@ iframe {
     height: 100%;
     width: auto;
 }
+
+/* Warning */
+.warning {
+    color: #F05D5E;
+    font-size: small;
+    font-style: italic;
+}
