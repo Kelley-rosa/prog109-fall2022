@@ -1,95 +1,68 @@
-<!DOCTYPE HTML>
-<html lang="en">
-    <head>
-        <!--Meta Information-->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <meta name="author" content="Kelley Rosa">
+function isValid() {
+    var invalid = 0;
 
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <title>Portfolio</title>
-    </head>
-    
-    <body>
-        <div id="wrap">
+    // Email Verification
+    var emailValue = document.getElementById("Email").value;
+    var atpos = emailValue.indexOf("@");
+    var dotpos = emailValue.lastIndexOf(".");
 
-            <!--Header-->
-            <div id="header">
-                <h1>Kelley Rosa's Portfolio</h1>
-            </div>
-            
-            <!--Navigation Menu-->
-            <div id="nav">
-                <ul>
-                    <li><a href="https://kelley-rosa.github.io/prog109-fall2022/index.html" target="_self">Home</a></li>
-                    <li><a href="https://kelley-rosa.github.io/prog109-fall2022/about.html" target="_self">About</a></li>
-                    <li><a href="https://kelley-rosa.github.io/prog109-fall2022/coursework.html" target="_self">Coursework</a></li>
-                    <li><a href="https://kelley-rosa.github.io/prog109-fall2022/artifacts.html" target="_self">Artifacts</a></li>
-                    <li><a href="https://kelley-rosa.github.io/prog109-fall2022/modules.html" target="_self">Module Assignments</a></li>
-                    <li><a href="https://kelley-rosa.github.io/prog109-fall2022/contact-me.html" target="_self">Contact Me</a></li>
-                    <li><a href="https://kelley-rosa.github.io/prog109-fall2022/creative-page.html" target="_self">Creative Page</a></li>
-                </ul>
-            </div>
-            
-            <!--Content Body-->
-            <div id="content">
-                <h2>Contact Me</h2>
+    if (emailValue === "null" || emailValue == "") {
+        document.getElementById("invalidEmail").innerHTML = "Email address is required.";
+        document.getElementById("Email").focus(); // set focus
+        console.log("Email invalid — length");
+        invalid += 1;
+    } else if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=emailValue.length) {
+        document.getElementById("invalidEmail").innerHTML = "Email address is invaild";
+        document.getElementById("Email").focus(); // set focus
+        console.log("Email invalid — does not contain @ or .");
+        invalid += 1;
+    } else {
+        document.getElementById("invalidEmail").innerHTML = "";
+        console.log("Email valid");
+    }
 
-                <form id="myform" action="https://kelley-rosa.github.io/prog109-fall2022/thank-you.html" method="get" name="myContact" onsubmit="return isValid()">
-                    <!--First Name-->
-                    <label for='FirstName'>First Name:</label>
-                    <div class="warning" id="invalidFirstName"></div>
-                    <input type="text" id="FirstName"><br>
+    // Last Name Verification
+    var lastNameValue = document.getElementById("LastName").value;
 
-                    <!--Last Name-->
-                    <label for='LastName'>Last Name:</label>
-                    <div class="warning" id="invalidLasttName"></div>
-                    <input type="text" id="LastName"><br>
+    if (lastNameValue === "null" || lastNameValue == "" || lastNameValue.length > 50) {
+        document.getElementById("invalidLasttName").innerHTML = "Last name is required and cannot be greater than 50 characters";
+        document.getElementById("LastName").focus(); // set focus
+        console.log("Last name invalid — length");
+        invalid += 1;
+    } else if (lastNameValue.match("^[a-zA-Z ,.'-]+$") === null) {
+        document.getElementById("invalidLasttName").innerHTML = "Last name contains invalid character (accepts only A-Z, a-z, and ,.'-)";
+        document.getElementById("LastName").focus(); // set focus
+        console.log("Last name invalid — bad characters");
+        invalid += 1;
+    } else {
+        document.getElementById("invalidLasttName").innerHTML = "";
+        console.log("Last name valid");
+    }
 
-                    <!--Email-->
-                    <label for='Email'>Email:</label>
-                    <div class="warning" id="invalidEmail"></div>
-                    <input type="text" id="Email"><br>
+    // First Name Verification
+    var firstNameValue = document.getElementById("FirstName").value;
 
-                    <!--Comment-->
-                    <label for="Comment">Comment <i>(optional)</i>:</label><br>
-                    <textarea id="Comment" name="Comment" rows="12" cols="50"></textarea><br>
+    if (firstNameValue === "null" || firstNameValue == "" || firstNameValue.length > 20) {
+        document.getElementById("invalidFirstName").innerHTML = "First name is required and cannot be greater than 20 characters";
+        document.getElementById("FirstName").focus(); // set focus
+        console.log("First name invalid — length");
+        invalid += 1;
+    } else if (firstNameValue.match("^[a-zA-Z ,.'-]+$") === null) {
+        document.getElementById("invalidFirstName").innerHTML = "First name contains invalid character (accepts only A-Z, a-z, and ,.'-)";
+        document.getElementById("FirstName").focus(); // set focus
+        console.log("First name invalid — bad characters");
+        invalid += 1;
+    } else {
+        document.getElementById("invalidFirstName").innerHTML = "";
+        console.log("First name valid")
+    }
 
-                    <p class="warning" id="submitError"></p>
-                    <input type="submit" id="submit" name="submit" value="Submit">
-                    <input type="reset">
-                </form>
-                
-                <script src="contact-me_javascript.js"></script>
-                
-                <div class="clear"> </div>
-            </div>
-            
-            <div class="clear"> </div>
-            <br>
-
-            <!--Footer-->
-            <div id="footer">
-                <div class="left"> W3C Validator
-                    <p>
-                        <!-- W3C Markup Validator -->
-                        <a href="http://validator.w3.org" target="_blank">
-                            <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88">
-                        </a>&nbsp;
-                        <!-- W3C CSS Validator -->
-                        <a href="http://jigsaw.w3.org/css-validator" target="_blank">
-                            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
-                        </a>
-                    </p>
-                </div>
-                
-                <div class="right"> 
-                    <!-- Please consider leaving the credit - link back to our website in the footer intact or if you want to remove it please buy link back free license on http://www.simpletemplates.org/simple-website-template-1.html-->
-                    Design by <a href="http://www.simpletemplates.org" target="_blank">Simple Website Templates</a>
-                </div>
-                
-                <div class="clear"> </div>
-            </div>
-        </div>
-    </body>
-</html>
+    // Genral Verification
+    if (invalid != 0){
+        document.getElementById("submitError").innerHTML = "<strong>Error Submitting — See Above</strong>";
+        return false;
+        
+    } else {
+        return true;
+    }
+}
