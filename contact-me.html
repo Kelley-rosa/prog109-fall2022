@@ -33,35 +33,40 @@
             
             <!--Content Body-->
             <div id="content">
-                <h2>Creative Page</h2>
-                <img src="images/creative00.jpg" id="creative">
-                <p>
-                    I believe the most important thing to learn, as you grown, is self reflection. Robert L. Rosen describes self-reflection as "asking yourself questions about your values, <br>
-                    assessing your strengths and failures, thinking about your perceptions and interactions with others, and imagining where you want to take your life in the future.” <br>
-                    A lot of the time, we act and neglect ourselves the lessons from our actions. We ignore our feelings and continue to act. Once we learn how to listen to what we want, <br>
-                    we then how to learn how to communicate our feelings to those around us. I would recoment reading 
-                    <a href="https://www.amazon.com/How-win-Friends-Influence-People/dp/8189297813/ref=sr_1_4?gclid=CjwKCAiAyfybBhBKEiwAgtB7fgz_EdGI5y_aKMH5WhUDN6JPR_GCCCsOc_EYQIxwBePFIqFrkd9mtxoCtYIQAvD_BwE&hvadid=267869286942&hvdev=c&hvlocphy=9033288&hvnetw=g&hvqmt=e&hvrand=12027153108787029372&hvtargid=kwd-298652170742&hydadcr=22593_10348166&keywords=how-win-friends-influence-people&qid=1669328116&sr=8-4"> How to Win Friends and Influence People.</a>
-                    <br>
-                    So if you havent today, take time to reflect. <br>
-                    You'll only find yourself.
+                <h2>Contact Me</h2>
 
+                <form id="myform" action="https://kelley-rosa.github.io/prog109-fall2022/thank-you.html" method="get" name="myContact" onsubmit="return isValid()">
+                    <!--First Name-->
+                    <label for='FirstName'>First Name:</label>
+                    <div class="warning" id="invalidFirstName"></div>
+                    <input type="text" id="FirstName"><br>
 
+                    <!--Last Name-->
+                    <label for='LastName'>Last Name:</label>
+                    <div class="warning" id="invalidLasttName"></div>
+                    <input type="text" id="LastName"><br>
 
+                    <!--Email-->
+                    <label for='Email'>Email:</label>
+                    <div class="warning" id="invalidEmail"></div>
+                    <input type="text" id="Email"><br>
 
-                </p>
+                    <!--Comment-->
+                    <label for="Comment">Comment <i>(optional)</i>:</label><br>
+                    <textarea id="Comment" name="Comment" rows="12" cols="50"></textarea><br>
 
-                <br>
-
-                <iframe width="950" height="534" src="https://www.youtube.com/embed/4lTbWQ8zD3w" title="How To Know Yourself" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="warning" id="submitError"></p>
+                    <input type="submit" id="submit" name="submit" value="Submit">
+                    <input type="reset">
+                </form>
+                
+                <script src="contact-me_javascript.js"></script>
+                
                 <div class="clear"> </div>
-
             </div>
-            <br>
-
-
-            
             
             <div class="clear"> </div>
+            <br>
 
             <!--Footer-->
             <div id="footer">
