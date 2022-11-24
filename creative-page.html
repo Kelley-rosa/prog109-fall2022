@@ -33,11 +33,40 @@
             
             <!--Content Body-->
             <div id="content">
-                <h2>Creative Page</h2>
+                <h2>Contact Me</h2>
+
+                <form id="myform" action="https://kelley-rosa.github.io/prog109-fall2022/thank-you.html" method="get" name="myContact" onsubmit="return isValid()">
+                    <!--First Name-->
+                    <label for='FirstName'>First Name:</label>
+                    <div class="warning" id="invalidFirstName"></div>
+                    <input type="text" id="FirstName"><br>
+
+                    <!--Last Name-->
+                    <label for='LastName'>Last Name:</label>
+                    <div class="warning" id="invalidLasttName"></div>
+                    <input type="text" id="LastName"><br>
+
+                    <!--Email-->
+                    <label for='Email'>Email:</label>
+                    <div class="warning" id="invalidEmail"></div>
+                    <input type="text" id="Email"><br>
+
+                    <!--Comment-->
+                    <label for="Comment">Comment <i>(optional)</i>:</label><br>
+                    <textarea id="Comment" name="Comment" rows="12" cols="50"></textarea><br>
+
+                    <p class="warning" id="submitError"></p>
+                    <input type="submit" id="submit" name="submit" value="Submit">
+                    <input type="reset">
+                </form>
+                
+                <script src="contact-me_javascript.js"></script>
+                
                 <div class="clear"> </div>
             </div>
             
             <div class="clear"> </div>
+            <br>
 
             <!--Footer-->
             <div id="footer">
